@@ -1,4 +1,4 @@
-'''Diaz Jimenez Jorge Arif 3BV2  05/04/2023'''
+'''Díaz Jiménez Jorge Arif 3BV2  05/04/2023'''
 '''Incisios 1), 2) y 3) de la práctica 2 de la materia "Paradigmas de Programación"'''
 
 import random
@@ -35,4 +35,3 @@ def division():
     return lambda x: x/aleatorio #Retorna la división entre el dato de entrada 'x' (previamente ingresado por el usuario) con el número aleatorio guardado en la variable 'aleatorio'
 cosa = division() 
 print("\nDividir valor de entrada con el valor aleatorio previamente asignado da como resultado: ", cosa(entradaX))#Impresión de dividir el valor de entrada con un número aleatorio
-
