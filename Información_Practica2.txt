@@ -1,0 +1,8 @@
+ALUMNO: Diaz Jimenez Jorge Arif
+GRUPO: 3BV2
+FECHA: 05/04/2023
+MATERIA: Paradigmas de Programación
+
+El archivo "parte1.py" engloba a los incisisos 1), 2), 3) requisitados de la práctica 2
+
+El archivo "parte2.py" engloba al incisio 4) requisitado en la práctica 2
