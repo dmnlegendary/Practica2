@@ -28,10 +28,11 @@ def multiplicacion():
 valueXY = multiplicacion()
 print("\n\nMultiplicar X, Y da: ", valueXY(entradaX, entradaY)) #Impresión de la multiplicación de entradaX con entradaY
 
-
+#Definición del comportamiento de la función division()
 def division():
-    aleatorio = random.randint(1,10)
+    aleatorio = random.randint(1,10) #Generá un número aleatorio entre 1 y 10
     print("\n\nEl numero aleatorio generado es: ", aleatorio)
-    return lambda x: x/aleatorio
+    return lambda x: x/aleatorio #Retorna la división entre el dato de entrada 'x' (previamente ingresado por el usuario) con el número aleatorio guardado en la variable 'aleatorio'
 cosa = division() 
-print("\nDividir valor de entrada con el valor aleatorio previamente asignado da como resultado: ", cosa(entradaX))
+print("\nDividir valor de entrada con el valor aleatorio previamente asignado da como resultado: ", cosa(entradaX))#Impresión de dividir el valor de entrada con un número aleatorio
+
