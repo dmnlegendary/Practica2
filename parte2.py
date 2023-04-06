@@ -1,4 +1,4 @@
-'''Diaz Jimenez Jorge Arif 3BV2  05/04/2023'''
+'''Díaz Jiménez Jorge Arif 3BV2  05/04/2023'''
 '''Inciso 4) de la Práctica 2 de la materia "Paradigmas de programación"'''
 
 import random
@@ -14,7 +14,7 @@ def func_compute(n):
 '''
 El 'lambda' que se encuentra dentro la función 'func_compute(n)' permite que al asignarse un valor 'x' éste se multiplique con el del parámetro 'n'
 '''
-result = func_compute(2) #La variable 'result' guardara el resultado de operar con func_compute(n); tales que 'n=2' y el parametro 'x' realizando la llamada "result(x)"
+result = func_compute(2) #La variable 'result' guardará el resultado de operar con func_compute(n); tales que 'n=2' y el parametro 'x' realizando la llamada "result(x)"
 print("Double the number of 15 =", result(15)) #Imprime la multiplicacion del valor asignado 'x=15' multiplicado con 'n=2'
 
 
@@ -28,7 +28,7 @@ subject_marks.sort(key = lambda x: x[1]) #Se realiza un ordenamiento sobre la li
 Nota: el método "list.sort(key=None, reverse=False)".Sintaxis extraida de: https://programmerclick.com/article/75431999010/#:~:text=para%20resumir%3A%20sort%20%28%29%20es%20un%20m%C3%A9todo%20de,devuelve%20una%20nueva%20lista%20ordenada%20de%20un%20iterador.
 Permite ordenar los elementos de un arreglo si se especifican los parámetros. Explicación extraida de: https://programmerclick.com/article/75431999010/#:~:text=para%20resumir%3A%20sort%20%28%29%20es%20un%20m%C3%A9todo%20de,devuelve%20una%20nueva%20lista%20ordenada%20de%20un%20iterador 
 En este caso, lambda recibira cada elemento dentro del arreglo (por ejemplo: ('English',88),('Science',90),...), y gracias a la designación x[1]
-solamente escogera al 2° componente de cada elemento, es decir el número. Para finalmente dar continuación al ordenamiento bajo ese parámetro.
+solamente escogerá al 2° componente de cada elemento, es decir el número. Para finalmente dar continuación al ordenamiento bajo ese parámetro.
 '''
 print("\nResult:")
 print(subject_marks) #Finalmente imprimimos los valores de la lista a manera de que imprima primero el elemento cuyo 2° componente sea menor y por ultimo al elemento cuyo 2° elemento sea mayor
@@ -50,7 +50,7 @@ la condición, asignarlo a la nueva variable. Empleado de la misma manera para n
 print(even_nums) #Imprime los números pares de la lista
 print("\nNumbers from the said list:")
 odd_nums = list(filter(lambda x: x%2 != 0, nums)) #Filtra los números impares de la lista y los guarda en "odd_nums"
-print(odd_nums) #Imprime los numeros impares de la lista
+print(odd_nums) #Imprime los números impares de la lista
 
 
 
@@ -67,7 +67,7 @@ número que recibió a la potencia 2 y 3 en las variables "square_nums & cube_nu
 '''
 print(square_nums) #Imprime los números de la lista elevados al cuadrado
 print("\nEvery number of the said list:")
-cube_nums = list(map(lambda x: x**3, nums)) #Eleva cada numero de la lista al cubo
+cube_nums = list(map(lambda x: x**3, nums)) #Eleva cada número de la lista al cubo
 print(cube_nums) #Imprime los números elevados al cubo
 
 
@@ -79,14 +79,14 @@ En nuestra función 'lambda' analizaremos el valor que se le haya asignado como 
 el valor de entrada empieza con 'N', de ser afirmativo se devolverá e imprimirá verdadero. Pero si no cumple dicha condición devolverá e imprimirá
 falso. (Sólo podra retornar verdadero/falso)
 '''
-print(starts_with('Python')) #Impresión (Verdadero) si la palabra empieza o no con 'P'
+print(starts_with('Python')) #Imprime verdadero o falso, dependiendo sí la palabra empieza o no con 'P' (en este caso será 'verdadero')
 starts_with = lambda x: True if x.startswith('P') else False
-print(starts_with('Java')) #Impresión (Falso) si la palabra empieza o no con 'P'
+print(starts_with('Java')) #Imprime verdadero o falso, dependiendo sí la palabra empieza o no con 'P' (en este caso será 'falso')
 
 
 
 #En esta parte comprenderemos el manejo de datos del sistema referentes a la fecha y hora actuales de nuestro computador
-now = datetime.datetime.now() #Guarda en la variable "now" todos los datos del sistem con respecto a la fecha y hora actuales
+now = datetime.datetime.now() #Guarda en la variable "now" todos los datos del sistema con respecto a la fecha y hora actuales
 print(now) #Imprime la hora,día, mes y año actuales
 year = lambda x: x.year #la variable "year" guarda el año actual
 month = lambda x: x.month #la variable "month" guarda el mes actual
